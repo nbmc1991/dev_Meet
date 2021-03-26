@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser, logoutUser } from './store/actions/authActions';
@@ -13,6 +13,11 @@ import Register from './components/pages/Register';
 import Login from './components/pages/Login';
 import PrivateRoute from './components/auth/PrivateRoute';
 import Dashboard from './components/pages/Dashboard';
+
+import Header from './components/pages/Header';
+import {Container} from '@material-ui/core';
+import DevCards from './components/pages/DevCards';
+
 
 const App = () => {
   const { dispatch } = useContext(Store);
@@ -35,17 +40,21 @@ const App = () => {
   }, [ dispatch ]);
 
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Route exact path="/" component={Landing} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/login" component={Login} />
-        <Switch>
+    <div className='App'>
+    <BrowserRouter>
+          <Container maxWidth='lg' >
+          <Switch>
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/" component={Landing} />
+          <Header/>
+          </Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
-        </Switch>
-      </div>
-    </Router>
+        
+          </Container>
+    </BrowserRouter>
+    </div>
+
   );
 };
 

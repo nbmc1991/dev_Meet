@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { Store } from '../../store';
 import { logoutUser } from '../../store/actions/authActions';
+import DevCards from './DevCards';
 
 import API from '../../utils/apiHelper';
 
@@ -47,6 +48,9 @@ const Dashboard = props => {
             onClick={onLogoutClick}>
             Logout
           </button>
+        </div>
+        <div>
+        <DevCards />
         </div>
       </div>
     </div>
