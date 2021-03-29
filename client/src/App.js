@@ -50,6 +50,11 @@ const App = () => {
           <Header/>
           </Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
+          <Route exact path='/chat'>
+            <Header backButton='/' />
+          
+          <h1>im a chat pages</h1>
+</Route>
         
           </Container>
     </BrowserRouter>

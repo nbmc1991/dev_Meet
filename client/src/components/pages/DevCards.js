@@ -9,15 +9,20 @@ import database from './firebase';
 function DevCards(){
     const [people, setPeople] = useState([]);
     
+    //piece of code which run based on a condition
     useEffect(()=> {
-database.collection('people').onSnapshot(snapshot => (
+
+        const unsubscribe = database
+        .collection('people')
+        .onSnapshot(snapshot => (
     setPeople(snapshot.docs.map(doc => doc.data()))
-))
+));
+return () => {
+    unsubscribe();
+};
     }, []);
     
     return(
-        <div>
-<h1> Dev Cards</h1>
 <div className='devCards__cardContainer'> 
 {people.map(person => (
     <TinderCard
@@ -34,7 +39,7 @@ database.collection('people').onSnapshot(snapshot => (
     
 ))}
  </div>
-        </div>
+        
     );
 }
 
