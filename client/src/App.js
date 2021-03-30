@@ -17,6 +17,9 @@ import Dashboard from './components/pages/Dashboard';
 import Header from './components/pages/Header';
 import {Container} from '@material-ui/core';
 import DevCards from './components/pages/DevCards';
+import Chats from './components/pages/Chats';
+
+
 
 
 const App = () => {
@@ -44,17 +47,17 @@ const App = () => {
     <BrowserRouter>
           <Container maxWidth='lg' >
           <Switch>
+          <Route exact path='/chat'>
+            <Header backButton='/dashboard' />
+          
+         <Chats />
+</Route>
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/" component={Landing} />
           <Header/>
           </Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
-          <Route exact path='/chat'>
-            <Header backButton='/' />
-          
-          <h1>im a chat pages</h1>
-</Route>
         
           </Container>
     </BrowserRouter>
