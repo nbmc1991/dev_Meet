@@ -5,7 +5,6 @@
 
   [![Alt text for your video](https://github.com/nbmc1991/readmegenerator/blob/main/visual/Screenshot%202020-11-14%20115702.png)](https://youtu.be/uleqBb1IDMg)
 
-  ![](https://github.com/nbmc1991/readmegenerator/blob/main/visual/2020-11-13.png)
 
 
 ## Table of Contents:
@@ -33,6 +32,7 @@
 
 
 ## Description
+  ![](https://github.com/nbmc1991/dev_meet/blob/master/client/public/Screenshot%202021-03-30%20010858.png?raw=true)
 
 Dev_Meet is a social media platform made for Developers like you! In Dev_Meet, you'll be able to possibly interact with other developers based on favorite coding langages.
 
@@ -42,7 +42,7 @@ To install dependencies run:
 npm install
 
 ## Usage 
-
+ ![](https://github.com/nbmc1991/dev_meet/blob/master/client/public/Screenshot%202021-03-30%20010858.png?raw=true)
 To facilitate net working for Software Developers
 
 ## Contributing
