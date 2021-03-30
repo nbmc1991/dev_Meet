@@ -1,12 +1,7 @@
 # Dev_Meet.
-
-
   ![License](https://img.shields.io/badge/License-MIT license%202.0-blue.svg)
-
-  [![Alt text for your video](https://github.com/nbmc1991/readmegenerator/blob/main/visual/Screenshot%202020-11-14%20115702.png)](https://youtu.be/uleqBb1IDMg)
-
-
-
+<!-- 
+  [![Alt text for your video](https://github.com/nbmc1991/readmegenerator/blob/main/visual/Screenshot%202020-11-14%20115702.png)](https://youtu.be/uleqBb1IDMg) -->
 ## Table of Contents:
 
 
@@ -42,7 +37,7 @@ To install dependencies run:
 npm install
 
 ## Usage 
- ![](https://github.com/nbmc1991/dev_meet/blob/master/client/public/Screenshot%202021-03-30%20010858.png?raw=true)
+ ![](https://github.com/nbmc1991/dev_meet/blob/master/client/public/Screenshot%202021-03-30%20010957.png?raw=true)
 To facilitate net working for Software Developers
 
 ## Contributing
